@@ -1,0 +1,29 @@
+/* Premium wood/gold thematic styling for Vision and Mission cards */
+.vision-mission-section {
+  background-color: #171513 !important;
+}
+
+.vision-mission-card {
+  background-color: rgba(40, 36, 32, 0.4) !important;
+  border-color: rgba(197, 160, 89, 0.2) !important;
+  backdrop-filter: blur(12px);
+}
+
+.vision-mission-card:hover {
+  border-color: rgba(197, 160, 89, 0.75) !important;
+  background-color: rgba(40, 36, 32, 0.6) !important;
+}
+
+.vision-mission-icon-container {
+  background-color: rgba(197, 160, 89, 0.08) !important;
+  border-color: rgba(197, 160, 89, 0.35) !important;
+}
+
+.vision-mission-card:hover .vision-mission-icon-container {
+  background-color: var(--tan) !important;
+  border-color: var(--tan) !important;
+}
+
+.vision-mission-card:hover .vision-mission-icon {
+  color: #181614 !important;
+}

@@ -1,0 +1,51 @@
+.bg-header {
+  background-color: #181614 !important;
+}
+
+.nav-link {
+  position: relative;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--foreground);
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: var(--tan);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--tan);
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active-link {
+  color: var(--tan) !important;
+}
+.active-link::after {
+  transform: scaleX(1) !important;
+  transform-origin: bottom left !important;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out both;
+}
